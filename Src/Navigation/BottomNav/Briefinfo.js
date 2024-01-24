@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
   ScrollView,
   FlatList,
+  Linking,
 } from 'react-native';
 import React from 'react';
-
+import Education from './Education';
 import {
   backendData,
   programmingData,
@@ -46,23 +47,36 @@ const Briefinfo = () => {
             <View>
               <Text style={styles.d_Text}>D</Text>
               <Text style={styles.dev_Text}>eveloper</Text>
-              <Text style={styles.Mob_text}>MOBILE APP</Text>
+              <Text style={styles.Mob_text}>ANDROID APP</Text>
               <Text style={styles.Name_Text}>Ashish Kanojia</Text>
             </View>
             <View style={styles.contLink}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL(
+                    'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrkqZjnNQgbVPBWgSmWjbkBMNwDtSvrvBzMZXPnvPnTwfHXjMdzbGRRtzZKFDsLcjCWLpB',
+                  );
+                }}>
                 <Image
                   source={require('../../Helper/images/iconsMail.png')}
                   style={styles.contIconFirst}
                 />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL('https://github.com/Ashishkanojia2');
+                }}>
                 <Image
                   source={require('../../Helper/images/iconsGit.png')}
                   style={styles.contIconSec}
                 />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL(
+                    'https://www.linkedin.com/in/ashish-kanojia-9a15b4187/',
+                  );
+                }}>
                 <Image
                   source={require('../../Helper/images/iconsIn.png')}
                   style={styles.contIconThird}
@@ -88,28 +102,23 @@ const Briefinfo = () => {
               __________
             </Text>
             <View style={styles.aboutMe}>
-              <ScrollView>
-                <Text
-                  style={{
-                    color: '#fff',
-                    fontSize: 20,
-                    // lineHeight: 30,
-                    // alignSelf: 'center',
-                    justifyContent: 'center',
-                    marginBottom: 20,
-                  }}>
-                  An Android developer is a professional who specializes in
-                  creating applications for the Android operating system. Here's
-                  a brief summary of the key responsibilities, skills, and tasks
-                  associated with Android development.Designing and building
-                  Android applications for smartphones, tablets, and other
-                  devices : Designing and building Android applications for
-                  smartphones, tablets, and other devices. Android applications
-                  for smartphones, tablets, and other devices : Designing and
-                  building Android applications for smartphones, tablets, and
-                  other devices.
-                </Text>
-              </ScrollView>
+              <Text
+                style={{
+                  color: '#fff',
+                  fontSize: 20,
+                  // lineHeight: 30,
+                  // alignSelf: 'center',
+                  justifyContent: 'center',
+                  marginBottom: 10,
+                }}>
+                I have a year of experience in the Android developer field, and
+                I have proficiency in designing Android apps. I know JavaScript
+                and React Native, and also have strong knowledge of core
+                concepts in Java,I possess a passion for continuous learning,
+                staying updated with the latest technologies, and applying a
+                proactive approach to project development.I am dedicated to
+                contributing to the creation of high-quality Android apps.
+              </Text>
             </View>
             <View style={styles.SkillContaine}>
               <View
@@ -172,7 +181,7 @@ const Briefinfo = () => {
                     fontSize: windowWidth / 20,
                     marginBottom: windowHeight / 10,
                   }}>
-                  Currently These Language used for development..
+                  Currently, These Languages are used for development.
                 </Text>
               </View>
 
@@ -202,8 +211,10 @@ const Briefinfo = () => {
                     color: '#fff',
                     marginTop: windowHeight / 20,
                     fontSize: windowWidth / 17,
+                    textDecorationLine: 'underline',
+                    marginBottom:"5%"
                   }}>
-                  FrontEnd
+                  FRONTEND
                 </Text>
               </View>
               <View>
@@ -232,8 +243,10 @@ const Briefinfo = () => {
                     color: '#fff',
                     marginTop: windowHeight / 20,
                     fontSize: windowWidth / 17,
+                    textDecorationLine: 'underline',
+                    marginBottom: '5%',
                   }}>
-                  Backend
+                  BACKEND
                 </Text>
               </View>
               <View>
@@ -262,8 +275,10 @@ const Briefinfo = () => {
                     color: '#fff',
                     marginTop: windowHeight / 20,
                     fontSize: windowWidth / 17,
+                    textDecorationLine: 'underline',
+                    marginBottom: '5%',
                   }}>
-                  Programming Language
+                  PROGRAMMING LANGUAGES
                 </Text>
               </View>
               <View>
@@ -292,8 +307,10 @@ const Briefinfo = () => {
                     color: '#fff',
                     marginTop: windowHeight / 20,
                     fontSize: windowWidth / 17,
+                    textDecorationLine: 'underline',
+                    marginBottom: '5%',
                   }}>
-                  Miscellaneous
+                  MISCELLANEOUS
                 </Text>
               </View>
               <View>
@@ -322,8 +339,10 @@ const Briefinfo = () => {
                     color: '#fff',
                     marginTop: windowHeight / 20,
                     fontSize: windowWidth / 17,
+                    textDecorationLine: 'underline',
+                    marginBottom: '5%',
                   }}>
-                  Familiar With
+                  FAMILIAR WITH
                 </Text>
               </View>
               <View>
@@ -344,8 +363,11 @@ const Briefinfo = () => {
                 />
               </View>
             </View>
-            <View style={{backgroundColor: 'red', height:windowHeight, width:windowWidth}}>
+            <View style={{backgroundColor: '#000', marginTop: '20%'}}>
               <Projects />
+            </View>
+            <View style={{backgroundColor: '#000'}}>
+              <Education />
             </View>
           </View>
         </ScrollView>

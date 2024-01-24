@@ -69,13 +69,9 @@ export const backendData = [
     name: 'Java',
     image: require('../Helper/images/iconsJava.png'),
   },
+
   {
     id: 3,
-    name: 'FireBase',
-    image: require('../Helper/images/iconsFirebase.png'),
-  },
-  {
-    id: 4,
     name: 'MySql',
     image: require('../Helper/images/iconsDataBase.png'),
   },
@@ -114,7 +110,7 @@ export const MiscellaneousData = [
   },
   {
     id: 2,
-    name: 'web Deve',
+    name: 'web Dev',
     image: require('../Helper/images/iconsWebdevelopment.png'),
   },
   {
@@ -150,5 +146,10 @@ export const familiarData = [
     id: 5,
     name: 'Ubuntu',
     image: require('../Helper/images/iconsUbuntu.png'),
+  },
+  {
+    id: 6,
+    name: 'FireBase',
+    image: require('../Helper/images/iconsFirebase.png'),
   },
 ];

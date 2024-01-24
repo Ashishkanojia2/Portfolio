@@ -6,6 +6,7 @@ import Home from '../Screen/Home/Home';
 import AboutUs from '../Screen/About/AboutUs';
 import Briefinfo from './BottomNav/Briefinfo';
 import Projects from './BottomNav/Projects';
+import Education from './BottomNav/Education';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ const Navigation = () => {
         <Stack.Screen
           name="Projects"
           component={Projects}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Education"
+          component={Education}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

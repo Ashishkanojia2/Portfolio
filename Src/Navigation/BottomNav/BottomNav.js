@@ -4,7 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import AboutUs from '../BottomNav/AboutUs';
 import Skills from '../BottomNav/Skills';
 import Projects from '../BottomNav/Projects';
-import Company from '../BottomNav/Company';
+import Company from './Education';
 import {NavigationContainer} from '@react-navigation/native';
 import Briefinfo from './Briefinfo';
 
