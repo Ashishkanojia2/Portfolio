@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/BebasNeue-Regular.ttf",
+      "sha1": "8b3aaeb978f3cb5f575860774b50c332338563c1"
+    },
+    {
+      "path": "assets/fonts/DMSans-VariableFont_opsz,wght.ttf",
+      "sha1": "bd912858c0f8887c01a56b09e6b1ca1cf81418ee"
+    },
+    {
+      "path": "assets/fonts/IMFellFrenchCanonSC-Regular.ttf",
+      "sha1": "8b5f5340a30fdae057056e27e7fb49fe80f2cda6"
+    },
+    {
+      "path": "assets/fonts/Merriweather-Bold.ttf",
+      "sha1": "09c7429408c624b9991c44e9975a9129fb2d2fe7"
+    },
+    {
+      "path": "assets/fonts/Merriweather-Regular.ttf",
+      "sha1": "f4e7810e4e20d1932d3d7994bb6f6456280ee6bd"
+    },
+    {
+      "path": "assets/fonts/NotoSerifDogra-Regular.ttf",
+      "sha1": "7b021551a18d919d1a0f5ed7b52f335ab10c84f4"
+    },
+    {
+      "path": "assets/fonts/ShadowsIntoLight-Regular.ttf",
+      "sha1": "e512d65b44398e83907215402d477643751c1dfa"
+    }
+  ]
+}
